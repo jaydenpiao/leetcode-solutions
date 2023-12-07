@@ -1,8 +1,7 @@
-package solutions_java.bst;
 /*
- * @lc app=leetcode id=104 lang=java
+ * @lc app=leetcode id=100 lang=java
  *
- * [104] Maximum Depth of Binary Tree
+ * [100] Same Tree
  */
 
 // @lc code=start
@@ -22,11 +21,10 @@ package solutions_java.bst;
  * }
  */
 class Solution {
-    public int maxDepth(TreeNode root) {
-        if (root == null) return 0;
-        int left = maxDepth(root.left);
-        int right = maxDepth(root.right);
-        return Math.max(left, right) + 1;
+    public boolean isSameTree(TreeNode p, TreeNode q) {
+        if (p == null && q == null) return true;
+        if (p == null || q == null || p.val != q.val) return false;
+        return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
     }
 }
 // @lc code=end
