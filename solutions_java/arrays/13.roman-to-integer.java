@@ -1,3 +1,4 @@
+package solutions_java.arrays;
 /*
  * @lc app=leetcode id=13 lang=java
  *
