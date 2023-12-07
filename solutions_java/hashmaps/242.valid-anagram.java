@@ -1,3 +1,4 @@
+package solutions_java.hashmaps;
 /*
  * @lc app=leetcode id=242 lang=java
  *
