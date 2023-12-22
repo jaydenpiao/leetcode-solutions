@@ -1,3 +1,4 @@
+package solutions_java.bst;
 /*
  * @lc app=leetcode id=226 lang=java
  *
